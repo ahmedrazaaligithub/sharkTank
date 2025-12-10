@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shark Tank Pakistan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @keyframes slow-spin { 
+      from { transform: rotate(0deg) } 
+      to { transform: rotate(360deg) } 
+    }
+    .animate-slow-spin { animation: slow-spin 40s linear infinite; }
+  </style>
+
+</head>
+
+<body class="min-h-screen text-white" style="background: linear-gradient(180deg,#071233 0%, #071933 45%, #071022 100%);">
+
+<!-- Background beams -->
+<div class="pointer-events-none fixed inset-0 overflow-hidden -z-10">
+  <div class="absolute -left-24 -top-24 w-96 h-96 rounded-full blur-3xl opacity-30 bg-gradient-to-br from-cyan-500 to-blue-700 transform rotate-12 animate-slow-spin"></div>
+  <div class="absolute right-0 top-20 w-80 h-80 rounded-full blur-2xl opacity-20 bg-gradient-to-br from-blue-600 to-indigo-700"></div>
+  <div class="absolute inset-0 bg-[url('/dots.svg')] opacity-5 mix-blend-screen"></div>
+</div>
+
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-50 backdrop-blur-md bg-black/40 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="flex items-center justify-between h-16">
+
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg,#062a6b,#0ea5e9);">
+          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M3 7h18M3 12h18M3 17h18"/>
+          </svg>
+        </div>
+        <span class="font-extrabold text-white text-xl tracking-tight">
+          SHARK TANK <span class="text-cyan-300">PAKISTAN</span>
+        </span>
+      </div>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#home" class="text-sm hover:text-cyan-300">Home</a>
+        <a href="#about" class="text-sm hover:text-cyan-300">About</a>
+        <a href="#sharks" class="text-sm hover:text-cyan-300">Sharks</a>
+        <a href="#episodes" class="text-sm hover:text-cyan-300">Episodes</a>
+
+        <button class="ml-4 bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2 rounded-lg text-sm font-semibold shadow-lg">
+          Apply Now
+        </button>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<header id="home" class="pt-28 pb-20">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+
+      <div>
+        <div class="inline-block bg-cyan-500/20 border border-cyan-400 px-3 py-1 rounded-full text-cyan-200 text-sm font-semibold mb-6">
+          🔴 Season 1 Now Streaming
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-black leading-tight bg-gradient-to-r from-cyan-400 via-blue-400 to-white bg-clip-text text-transparent">
+          MAKE YOUR<br />
+          <span class="bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">BIG IDEA</span><br />
+          A REALITY
+        </h1>
+
+        <p class="mt-4 text-lg text-blue-100 max-w-2xl">
+          Pakistan's premier business reality show where entrepreneurs pitch ideas to secure life-changing investments.
+        </p>
+
+        <div class="mt-6 flex flex-col sm:flex-row gap-4">
+          <a href="#episodes" class="bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 rounded-xl font-bold flex items-center gap-3 shadow-2xl">
+            ▶ Watch Now
+          </a>
+
+          <button class="border border-cyan-400 text-cyan-300 px-6 py-3 rounded-xl font-semibold backdrop-blur-sm">
+            Apply for Season 2
+          </button>
+        </div>
+
+        <div class="mt-8 grid grid-cols-3 gap-4 max-w-sm">
+          <div class="text-center">
+            <div class="text-3xl font-extrabold bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">13</div>
+            <div class="text-sm text-blue-200">Episodes</div>
+          </div>
+
+          <div class="text-center">
+            <div class="text-3xl font-extrabold bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">50+</div>
+            <div class="text-sm text-blue-200">Pitches</div>
+          </div>
+
+          <div class="text-center">
+            <div class="text-3xl font-extrabold bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">6</div>
+            <div class="text-sm text-blue-200">Sharks</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- HERO VIDEO -->
+      <div class="relative">
+        <div class="rounded-xl overflow-hidden shadow-2xl border border-white/5">
+          <div class="relative aspect-video bg-gradient-to-br from-slate-900 via-blue-900 to-black">
+            <img
+              src="https://sharkstankpakistan.pk/wp-content/uploads/2024/11/Sharks-Tank-Pakistan.webp"
+              class="w-full h-full object-cover mix-blend-overlay brightness-90"
+            />
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20"></div>
+
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-24 h-24 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center shadow-2xl cursor-pointer">
+                ▶
+              </div>
+            </div>
+
+            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90">
+              <p class="font-bold">Episode 1: The Beginning</p>
+              <p class="text-sm text-cyan-300">3 deals closed • 5 pitches • 45 min</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute -right-10 -bottom-10 w-48 h-48 rounded-full blur-3xl opacity-30 bg-gradient-to-br from-cyan-400 to-blue-500"></div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+
+<!-- ABOUT -->
+<section id="about" class="py-16">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-black">ABOUT SHARK TANK PAKISTAN</h2>
+      <p class="mt-3 text-blue-200 max-w-3xl mx-auto">
+        Pakistan's premier business reality show empowering entrepreneurs to secure investments.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="p-6 rounded-2xl border border-white/5 bg-gradient-to-br from-slate-900 to-slate-800 shadow-lg">
+        <div class="w-14 h-14 rounded-xl mb-4 bg-white/10 flex items-center justify-center">📈</div>
+        <h3 class="font-bold text-lg mb-2">Innovation</h3>
+        <p class="text-sm text-blue-200">Showcasing groundbreaking ideas.</p>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-white/5 bg-gradient-to-br from-slate-900 to-slate-800 shadow-lg">
+        <div class="w-14 h-14 rounded-xl mb-4 bg-white/10 flex items-center justify-center">👥</div>
+        <h3 class="font-bold text-lg mb-2">Mentorship</h3>
+        <p class="text-sm text-blue-200">Guidance from top investors.</p>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-white/5 bg-gradient-to-br from-slate-900 to-slate-800 shadow-lg">
+        <div class="w-14 h-14 rounded-xl mb-4 bg-white/10 flex items-center justify-center">🏆</div>
+        <h3 class="font-bold text-lg mb-2">Investment</h3>
+        <p class="text-sm text-blue-200">Secure funding to scale your business.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SHARKS -->
+<section id="sharks" class="py-16 bg-gradient-to-b from-transparent to-black/40">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-black">MEET THE SHARKS</h2>
+      <p class="mt-2 text-blue-200 max-w-2xl mx-auto">
+        Pakistan's most successful investors and business leaders.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Shark 1 -->
+      <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/5">
+        <div class="relative">
+          <img src="https://sharkstankpakistan.pk/wp-content/uploads/2024/11/Faisal-2-1.png.webp" class="w-full aspect-square object-cover" />
+          <div class="p-5 bg-gradient-to-t from-slate-900 to-slate-800">
+            <h3 class="font-bold text-lg">Faisal Aftab</h3>
+            <div class="text-cyan-300 font-semibold text-sm">Tech Investor</div>
+            <div class="text-blue-200 text-sm mt-1">Founder & GP at Zayn VC</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shark 2 -->
+      <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/5">
+        <div class="relative">
+          <img src="https://sharkstankpakistan.pk/wp-content/uploads/2024/11/Rabeel.png.webp" class="w-full aspect-square object-cover" />
+          <div class="p-5 bg-gradient-to-t from-slate-900 to-slate-800">
+            <h3 class="font-bold text-lg">Rabeel Warraich</h3>
+            <div class="text-cyan-300 font-semibold text-sm">Venture Capitalist</div>
+            <div class="text-blue-200 text-sm mt-1">CEO at Sarmayacar</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shark 3 -->
+      <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/5">
+        <div class="relative">
+          <img src="https://sharkstankpakistan.pk/wp-content/uploads/2024/11/aleena.png.webp" class="w-full aspect-square object-cover" />
+          <div class="p-5 bg-gradient-to-t from-slate-900 to-slate-800">
+            <h3 class="font-bold text-lg">Aleena Nadeem</h3>
+            <div class="text-cyan-300 font-semibold text-sm">FinTech Expert</div>
+            <div class="text-blue-200 text-sm mt-1">Founder & CEO at EduFi</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shark 4 -->
+      <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/5">
+        <div class="relative">
+          <img src="https://sharkstankpakistan.pk/wp-content/uploads/2024/11/Romana-2.png.webp" class="w-full aspect-square object-cover" />
+          <div class="p-5 bg-gradient-to-t from-slate-900 to-slate-800">
+            <h3 class="font-bold text-lg">Romanna Dada</h3>
+            <div class="text-cyan-300 font-semibold text-sm">CLAW Sectors</div>
+            <div class="text-blue-200 text-sm mt-1">Investor & Founder</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shark 5 -->
+      <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/5">
+        <div class="relative">
+          <img src="https://sharkstankpakistan.pk/wp-content/uploads/2024/11/Karim-2.png.webp" class="w-full aspect-square object-cover" />
+          <div class="p-5 bg-gradient-to-t from-slate-900 to-slate-800">
+            <h3 class="font-bold text-lg">Karim Teli</h3>
+            <div class="text-cyan-300 font-semibold text-sm">Operations</div>
+            <div class="text-blue-200 text-sm mt-1">Industry Executive</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shark 6 -->
+      <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/5">
+        <div class="relative">
+          <img src="https://sharkstankpakistan.pk/wp-content/uploads/2024/11/Usman.png.webp" class="w-full aspect-square object-cover" />
+          <div class="p-5 bg-gradient-to-t from-slate-900 to-slate-800">
+            <h3 class="font-bold text-lg">Usman Bashir</h3>
+            <div class="text-cyan-300 font-semibold text-sm">Technology</div>
+            <div class="text-blue-200 text-sm mt-1">Telecom Innovator</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- EPISODES -->
+<section id="episodes" class="py-16">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-black">LATEST EPISODES</h2>
+      <p class="mt-2 text-blue-200 max-w-2xl mx-auto">
+        Watch inspiring entrepreneurial journeys weekly.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Episode 1 -->
+      <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/5 bg-gradient-to-br from-slate-900 to-slate-800">
+        <div class="relative aspect-video">
+          <img src="https://sharkstankpakistan.pk/wp-content/uploads/2024/11/Sharks-Tank-Pakistan.webp" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60"></div>
+
+          <div class="absolute bottom-4 left-4 p-3 bg-black/50 rounded-lg backdrop-blur-sm">
+            <div class="flex items-center gap-4">
+              <div class="text-xs text-cyan-300 font-semibold">EPISODE 1</div>
+              <div class="text-sm text-blue-200">3 deals closed</div>
+            </div>
+            <h3 class="font-bold mt-2">The Beginning</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Episode 2 -->
+      <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/5 bg-gradient-to-br from-slate-900 to-slate-800">
+        <div class="relative aspect-video">
+          <img src="https://sharkstankpakistan.pk/wp-content/uploads/2024/11/Shark-Tank-Pakistan.webp" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60"></div>
+
+          <div class="absolute bottom-4 left-4 p-3 bg-black/50 rounded-lg backdrop-blur-sm">
+            <div class="flex items-center gap-4">
+              <div class="text-xs text-cyan-300 font-semibold">EPISODE 2</div>
+              <div class="text-sm text-blue-200">4 deals closed</div>
+            </div>
+            <h3 class="font-bold mt-2">Innovation Unleashed</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Episode 3 -->
+      <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/5 bg-gradient-to-br from-slate-900 to-slate-800">
+        <div class="relative aspect-video">
+          <img src="https://sharkstankpakistan.pk/wp-content/uploads/2024/11/shark-tank-episode-3.png" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60"></div>
+
+          <div class="absolute bottom-4 left-4 p-3 bg-black/50 rounded-lg backdrop-blur-sm">
+            <div class="flex items-center gap-4">
+              <div class="text-xs text-cyan-300 font-semibold">EPISODE 3</div>
+              <div class="text-sm text-blue-200">2 deals closed</div>
+            </div>
+            <h3 class="font-bold mt-2">Tech Revolution</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Episode 4 -->
+      <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/5 bg-gradient-to-br from-slate-900 to-slate-800">
+        <div class="relative aspect-video">
+          <img src="https://sharkstankpakistan.pk/wp-content/uploads/2024/11/EP4.png.webp" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60"></div>
+
+          <div class="absolute bottom-4 left-4 p-3 bg-black/50 rounded-lg backdrop-blur-sm">
+            <div class="flex items-center gap-4">
+              <div class="text-xs text-cyan-300 font-semibold">EPISODE 4</div>
+              <div class="text-sm text-blue-200">5 deals closed</div>
+            </div>
+            <h3 class="font-bold mt-2">Consumer Dreams</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-8">
+      <button class="bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 rounded-xl font-bold shadow-2xl">
+        View All Episodes
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="py-16 bg-gradient-to-b from-transparent to-black/40">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-2xl md:text-4xl font-black">READY TO PITCH YOUR IDEA?</h2>
+    <p class="mt-3 text-blue-200">Secure investment and mentorship from Pakistan's top business leaders.</p>
+
+    <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
+      <button class="bg-white text-blue-900 px-6 py-3 rounded-xl font-bold">Apply for Season 2</button>
+      <button class="border border-white/20 px-6 py-3 rounded-xl">Learn More</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="py-10 mt-10 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <div class="grid md:grid-cols-4 gap-6">
+
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg,#062a6b,#0ea5e9);">
+            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" stroke="currentColor">
+              <circle cx="12" cy="12" r="10"></circle>
+            </svg>
+          </div>
+          <div class="font-bold">Shark Tank Pakistan</div>
+        </div>
+        <p class="text-sm text-blue-200">
+          Empowering Pakistani entrepreneurs to transform their dreams into reality.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Episodes</a></li>
+          <li><a href="#">Apply</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-3">Resources</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Guidelines</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-3">Newsletter</h4>
+        <p class="text-sm text-blue-200 mb-3">Stay updated with latest episodes.</p>
+        <div class="flex gap-2">
+          <input type="email" placeholder="Your email" class="px-3 py-2 rounded-lg flex-1 text-sm bg-white/5" />
+          <button class="bg-cyan-500 px-3 py-2 rounded-lg">→</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center text-sm opacity-70 mt-8">
+      © 2024 Shark Tank Pakistan. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
